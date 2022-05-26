@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div style="margin:200px">
+
+    {{ data.Name }}<br>
+    <img src="{{data.Photo.url}}" alt="">
+    <br>
+    <a href="{% url 'app1:update' data.id %}">UPDATE</a>
+</div>
+{% endblock %}
